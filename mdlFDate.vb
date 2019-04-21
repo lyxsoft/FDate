@@ -15,8 +15,12 @@ Module mdlFDate
                 Catch ex As Exception
                     Console.WriteLine(ex)
                 End Try
+                Exit Sub
             End If
         End If
+        Console.WriteLine("FDate - Command-line tool to change file date." & vbCrLf &
+                          "Usage:" & vbCrLf &
+                          "FDate [FileFullName] [YYYY-MM-dd HH:mm]")
     End Sub
 
 End Module
